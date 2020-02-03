@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:hint="E-mail"
+        android:id="@+id/register_username_et"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register_username_et"
+        android:hint="Username"
+        android:id="@+id/register_displayName_et"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register_displayName_et"
+        android:hint="Contact Number (Optional)"
+        android:id="@+id/register_phone_et"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/register_phone_et"
+        android:id="@+id/register_password_et"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:layout_below="@id/register_password_et"
+        android:id="@+id/register_btn"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/register_btn"
+        android:text="Already have an account Sign In below" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/goTo_login_btn"/>
+
+</RelativeLayout>

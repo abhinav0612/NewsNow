@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center"
+            android:overScrollMode="never"></androidx.viewpager.widget.ViewPager>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horizontal_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewPager"
+            android:layout_marginTop="15dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vertical_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontal_recycler"
+            android:layout_marginTop="10dp"
+             />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
